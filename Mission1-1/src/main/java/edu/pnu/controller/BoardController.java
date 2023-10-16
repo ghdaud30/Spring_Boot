@@ -27,6 +27,10 @@ public class BoardController {
 	public BoardVO getBoard(@PathVariable Integer seq) {
 		return boardService.getBoard(seq);
 	}
+	@GetMapping("/getboard")
+	public BoardVO getBoard1( Integer seq) {
+		return boardService.getBoard(seq);
+	}
 	
 	@PostMapping("/board")
 	public BoardVO addMember(BoardVO boardVO) {
@@ -40,6 +44,10 @@ public class BoardController {
 	
 	@DeleteMapping("/board/{seq}")
 	public BoardVO removeMember(@PathVariable Integer seq) {
+		return boardService.removeMember(seq);
+	}
+	@DeleteMapping("/deleteboard")
+	public BoardVO removeMember1( Integer seq) {
 		return boardService.removeMember(seq);
 	}
 	
