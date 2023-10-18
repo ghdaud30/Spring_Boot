@@ -6,16 +6,18 @@ import java.util.List;
 import org.h2.result.UpdatableRow;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import edu.pnu.dao.MemberDao;
 import edu.pnu.domain.MemberVO;
 
 @SpringBootTest
+//@TestMethodOrder(OrderAnotation.class)
 public class MemberDaoTest {
 	
 	@DisplayName("MemberDao Insert Test")
-//	@Test
+	@Test
 	public void testInsert() throws SQLException {
 		MemberDao dao = new MemberDao();
 		int ret = dao.addMember(MemberVO.builder()
@@ -55,7 +57,7 @@ public class MemberDaoTest {
 	@Test
 	public void testUpdate() throws SQLException {
 		MemberDao dao = new MemberDao();
-		MemberVO m = dao.getMember(2);
+		MemberVO m = dao.getMember(11);
 		m.setPass("32czxz");
 		m.setName("ㅋㅌㅊdasdas");
 		int index = dao.updateMember(m);
@@ -72,7 +74,7 @@ public class MemberDaoTest {
 	@Test
 	public void testDelete() throws SQLException {
 		MemberDao dao = new MemberDao();
-		int num = 5;
+		int num = 15;
 		int index = dao.deleteMember(num);
 		
 		if(index >= 1) {

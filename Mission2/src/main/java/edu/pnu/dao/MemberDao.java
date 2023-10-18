@@ -148,6 +148,7 @@ public class MemberDao {
 		    result = psmt.executeUpdate();
 		    
 		    psmt.close();
+		    System.out.println("아이디 추가에 성공했습니다");
 		    return result; 
 		}
 		catch (Exception e) {

@@ -6,6 +6,7 @@
 - Builder에 대해서 학습하였습니다 - BuilderStudy 2023-10-13
 - 의존성 관리와 자동 설정  2023-10-16
 - misson2 h2 database를 이용한 쿼리문 처리 2023-10-16
+- misson h2와 service , controller를 이용한 로직을 구현
 
 ## 기억해야할 어노테이션
 - @Component
