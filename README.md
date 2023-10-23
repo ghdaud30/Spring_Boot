@@ -6,7 +6,8 @@
 - Builder에 대해서 학습하였습니다 - BuilderStudy 2023-10-13
 - 의존성 관리와 자동 설정  2023-10-16
 - misson2 h2 database를 이용한 쿼리문 처리 2023-10-16
-- misson h2와 service , controller를 이용한 로직을 구현
+- misson h2와 service , controller를 이용한 로직을 구현 2023-10-19
+- JPA를 이용한 처리 2023-10-23
 
 ## 기억해야할 어노테이션
 - @Component
@@ -17,6 +18,10 @@ C insert Post
 R select Get
 U upddate Put
 D delete Delete
+
+## 유용한 단축어
+ctrl + shift + O
+자동 임포트
 
 ## 환경
 lombok 추가 : mvnrepository.com 에서 다운로드 해서 , sts4 설치 위치에 설치,
