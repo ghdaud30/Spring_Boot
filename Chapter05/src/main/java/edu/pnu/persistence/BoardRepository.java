@@ -21,4 +21,10 @@ public interface BoardRepository extends JpaRepository<Board, Long> {
 	List<Board> queryAnnotationTest1(@Param("searchKeyWord") String searchKeyword);
 	@Query("SELECT b FROM Board b WHERE b.title like %?1% ORDER BY b.seq DESC")
 	List<Object[]> queryAnnotationTest2(@Param("searchKeyWord") String searchKeyword);
+	@Query(value="select seq, title, writer, createdate "
+			+  "from board where title like '%'||?1|| '%' "
+			+ "order by seq desc", nativeQuery=true)
+	List<Object[]> queryAnnotationTest3(String searchKeyword);
+	@Query("SELECT b FROM Board b ORDER BY b.seq DESC")
+	List<Board> queryAnnotationTest4(Pageable Paging);
 }

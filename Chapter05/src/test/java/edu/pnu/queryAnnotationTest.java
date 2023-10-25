@@ -7,6 +7,10 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 
 import edu.pnu.domain.Board;
 import edu.pnu.persistence.BoardRepository;
@@ -30,7 +34,7 @@ public class queryAnnotationTest {
 	
 	
 	@Test
-	@Order(1)
+	@Order(2)
 	public void testQueryAnnotationTest2() {
 		List<Object[]> boardList = boardRepo.queryAnnotationTest2("Title30");
 		
@@ -40,5 +44,26 @@ public class queryAnnotationTest {
 		}
 	}
 	
+	@Test
+	@Order(3)
+	public void testQueryAnnotationTest3() {
+		List<Object[]> boardList = boardRepo.queryAnnotationTest2("Title30");
+		
+		System.out.println("검색 결과3");
+		for(Object[] row : boardList) {
+			System.out.println("---> " + Arrays.toString(row));
+		}
+	}
 	
+	@Test
+	@Order(4)
+	public void testQueryAnnotationTest4() {
+		Pageable paging = PageRequest.of(0, 3, Sort.Direction.DESC,"seq");
+		List<Board> boardList = boardRepo.queryAnnotationTest4(paging);
+		
+		System.out.println("검색 결과4");
+		for(Board board : boardList) {
+			System.out.println("---> " + board.toString());
+		}
+	}
 }
