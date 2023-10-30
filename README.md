@@ -10,6 +10,7 @@
 - JPA를 이용한 처리 2023-10-23
 -쿼리 스트링 -페이징 처리, 정렬 2023-10-25 
 - 연관관계 매핑 2023-10-27
+- Misson05  JpaRepository 2023-10-30
 
 ## 기억해야할 어노테이션
 - @Component
@@ -29,3 +30,18 @@ ctrl + shift + O
 lombok 추가 : mvnrepository.com 에서 다운로드 해서 , sts4 설치 위치에 설치,
 프로젝트 우클릭 - Maven - Update Project
 https://mvnrepository.com/artifact/org.projectlombok/lombok/1.18.30
+
+## QueryDSL
+> <!--dependency-->
+		<dependency>
+			<groupId>com.querydsl</groupId>
+			<artifactId>querydsl-jpa</artifactId>
+			<version>5.0.0</version>
+			<classifier>jakarta</classifier>
+		</dependency>
+		<dependency>
+			<groupId>com.querydsl</groupId>
+			<artifactId>querydsl-apt</artifactId>
+			<version>5.0.0</version>
+			<classifier>jakarta</classifier>
+		</dependency>
