@@ -29,7 +29,7 @@ public class Board {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long seq;
 	private String title;
-//	private String writer;
+	private String writer;
 	private String content;
 	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date createDate;
@@ -39,10 +39,10 @@ public class Board {
 	@JoinColumn(name = "MEMBER_ID")
 	private Member member;
 	
-	public void setMember(Member member) {
-		this.member = member;
-		member.getBoardList().add(this);
-	}
+//	public void setMember(Member member) {
+//		this.member = member;
+//		member.getBoardList().add(this);
+//	}
 	
 	
 }
