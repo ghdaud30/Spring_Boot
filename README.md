@@ -11,11 +11,18 @@
 -쿼리 스트링 -페이징 처리, 정렬 2023-10-25 
 - 연관관계 매핑 2023-10-27
 - Misson05  JpaRepository 2023-10-30
+- 스프링 부트 화면 개발(타임리프 적용) 2023-11-02
+Brower -> Controller -> Service -> ServiceImpl -> Repository 
+손님	  웨이터	       주방장      보조	-> Board(DB)
+- 사용자 인증(로그인 처리) 2023-11-03 
 
 ## 기억해야할 어노테이션
 - @Component
 RestController, Controller , Service , Repository
 Configuration - Bean
+
+RestController : RESTfull 통신을 위하여 사용
+Controller : HTML 페이지 렌더링을 위하여 사용
 
 C insert Post
 R select Get
