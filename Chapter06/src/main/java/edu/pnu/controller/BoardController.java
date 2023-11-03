@@ -22,8 +22,6 @@ public class BoardController {
 	@Autowired
 	private BoardService boardService;
 	
-	
-	
 	@RequestMapping("/getBoardList")
 	public String getBoardList(Model model) {
 		List<Board> boardList = boardService.getBoardList();
@@ -32,7 +30,12 @@ public class BoardController {
 		return "getBoardList"; //Controller는 이 리턴값을 view의 이름으로 판단함
 	}
 	
-	@PostMapping("/insertBoard")
+	@GetMapping("/insertBoard") // 뷰를 호출함
+	public String insertBoardView() {
+		return "insertBoard";
+	}
+	
+	@PostMapping("/insertBoard") //실제 데이터 삽입
 	public String insertBoard(Board board) {
 		boardService.insertBoard(board);
 		return "redirect:getBoardList";
@@ -47,12 +50,12 @@ public class BoardController {
 	@PostMapping("/updateBoard")
 	public String updateBoard(Board board) {
 		boardService.updateBoard(board);
-		return "update success";
+		return "forward:getBoardList";
 	}
 	
 	@GetMapping("/deleteBoard")
 	public String deleteBoard(Board board) {
 		boardService.deleteBoard(board);
-		return "delete success";
+		return "forward:getBoardList";
 	}
 }

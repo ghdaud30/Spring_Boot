@@ -10,11 +10,11 @@
 	<h1>게시글 목록</h1>
 	<table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0" th:width="700">
 		<tr>
-			<th bgcolor='orange' width='100'>번호</th>
+			<th bgcolor='blue' width='100'>번호</th>
 			<th bgcolor='orange' width='200'>제목</th>
-			<th bgcolor='orange' width='150'>작성자</th>
-			<th bgcolor='orange' width='150'>등록일</th>
-			<th bgcolor='orange' width='100'>조회수</th>
+			<th bgcolor='yellow' width='150'>작성자</th>
+			<th bgcolor='red' width='150'>등록일</th>
+			<th bgcolor='green' width='100'>조회수</th>
 		</tr>
 
 		<tr th:each="board : ${boardList}">
@@ -22,12 +22,12 @@
 			<td><a th:href="@{/getBoard(seq=${board.seq})}" 
 					th:text="${board.title}"></a></td>
 			<td th:text="${board.writer}">
-			<td th:text="${board.createDate}">
+			<td th:text="${#dates.format(board.createDate,'yyyy-MM-dd')}">
 			<td th:text="${board.cnt}">
 		</tr>
 	</table>
 	<br />
-	<a th:href='insertBoard'>새글 등록</a>
+	<a th:href="@{/insterBoard}">새글 등록</a>
 </body>
 
 </html>
