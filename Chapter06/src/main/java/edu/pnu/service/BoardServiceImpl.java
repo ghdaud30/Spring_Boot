@@ -27,7 +27,6 @@ public class BoardServiceImpl implements BoardService {
 	
 	public void updateBoard(Board board) {
 		Board findBoard = boardRepo.findById(board.getSeq()).get();
-		findBoard.setTitle(board.getTitle());
 		findBoard.setContent(board.getContent());
 		boardRepo.save(findBoard);
 	}
