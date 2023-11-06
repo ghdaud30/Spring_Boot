@@ -8,7 +8,6 @@ INDEX VERSION 1.134+C:\Users\402-18\Desktop\Spring_Boot\.metadata\.plugins\org.e
 3312688774.index
 781251002.index
 1174799780.index
-3955660087.index
 1108930353.index
 4131431163.index
 2994341137.index
@@ -22,11 +21,11 @@ INDEX VERSION 1.134+C:\Users\402-18\Desktop\Spring_Boot\.metadata\.plugins\org.e
 542401100.index
 3424004863.index
 4270958532.index
+1770189983.index
 1145012289.index
 338271232.index
 847203685.index
 3034429108.index
-480627.index
 1528236837.index
 3930621831.index
 857140410.index
@@ -35,10 +34,8 @@ INDEX VERSION 1.134+C:\Users\402-18\Desktop\Spring_Boot\.metadata\.plugins\org.e
 4122999122.index
 711751819.index
 4146496191.index
-2235482546.index
 3339163742.index
 11554913.index
-4044383751.index
 3602804552.index
 3401505796.index
 2928356976.index
@@ -65,7 +62,6 @@ INDEX VERSION 1.134+C:\Users\402-18\Desktop\Spring_Boot\.metadata\.plugins\org.e
 2526259101.index
 3988987217.index
 607804017.index
-249900276.index
 2568435199.index
 3711695661.index
 91452730.index
@@ -74,11 +70,9 @@ INDEX VERSION 1.134+C:\Users\402-18\Desktop\Spring_Boot\.metadata\.plugins\org.e
 2889760561.index
 3038341641.index
 3666214088.index
-1495152854.index
 1490359433.index
 3296939056.index
 1116453128.index
-4276722394.index
 3675373195.index
 1179359870.index
 991792706.index
