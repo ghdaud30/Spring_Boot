@@ -15,6 +15,7 @@
 Brower -> Controller -> Service -> ServiceImpl -> Repository 
 손님	  웨이터	       주방장      보조	-> Board(DB)
 - 사용자 인증(로그인 처리) 2023-11-03 
+- Spring Boot Security 2023-11-06
 
 ## 기억해야할 어노테이션
 - @Component
