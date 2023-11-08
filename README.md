@@ -20,7 +20,9 @@ Brower -> Controller -> Service -> ServiceImpl -> Repository
    - JPA 연동 시큐리티
    - UsernamePasswordAuthenticationFilter
    - AuthorizationFilter
-- 로그인 세션 정보 체크 추가 2023-11-08
+- 로그인 세션 정보 체크 추가 & JPX 2023-11-08
+   - JWT (JSON Web Token)
+   - 인증에 필요한 정보를 암호화한 JSON Token
 
 ## 기억해야할 어노테이션
 - @Component
