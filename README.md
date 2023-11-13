@@ -25,14 +25,16 @@
    - 인증에 필요한 정보를 암호화한 JSON Token
 - 웹 애플리케이션 통합 2023-11-13
    - 1. 비즈니스 레이어 개발
-      - 1.1 Entity 클래스 만들기
-      - 1.2 Repository Interface 작성하기
-      - 1.3 JPA 테스트 하기
-      - 1.4 Service Interface & Class 만들기
+      - Entity 클래스 만들기
+      - Repository Interface 작성하기
+      - JPA 테스트 하기
+      - Service Interface & Class 만들기
    - 2. 프레젠테이션 레이어 개발
-      - 2.1 글 목록 기능 구현하기
+      - 글 목록 기능 구현하기
          - Controller 작성
-      - 2.2 게시판 기능 구현하기
+      - 게시판 기능 구현하기
+   - 3. 시큐리티 적용(인증,인가)
+      - 비밀번호 암호화
 
 ## 기억해야할 어노테이션
 - Component
