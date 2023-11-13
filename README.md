@@ -23,6 +23,13 @@
 - 로그인 세션 정보 체크 추가 & JPX 2023-11-08
    - JWT (JSON Web Token)
    - 인증에 필요한 정보를 암호화한 JSON Token
+- 웹 애플리케이션 통합 2023-11-13
+   - 1. 비즈니스 레이어 개발
+      - 1.1 Entity 클래스 만들기
+      - 1.2 Repository Interface 작성하기
+      - 1.3 JPA 테스트 하기
+      - 1.4 Service Interface & Class 만들기
+   - 2. 프레젠테이션 레이어 개발
 
 ## 기억해야할 어노테이션
 - Component
