@@ -13,7 +13,7 @@ import edu.pnu.domain.Board;
 import edu.pnu.persistence.BoardRepository;
 
 @Service
-public class BoardSerivceImpl {
+public class BoardSerivceImpl implements BoardService{
 	@Autowired
 	private BoardRepository boardRepo;
 	
