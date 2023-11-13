@@ -30,6 +30,9 @@
       - 1.3 JPA 테스트 하기
       - 1.4 Service Interface & Class 만들기
    - 2. 프레젠테이션 레이어 개발
+      - 2.1 글 목록 기능 구현하기
+         - Controller 작성
+      - 2.2 게시판 기능 구현하기
 
 ## 기억해야할 어노테이션
 - Component
