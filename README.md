@@ -35,7 +35,9 @@
       - 게시판 기능 구현하기
    - 3. 시큐리티 적용(인증,인가)
       - 비밀번호 암호화
-
+   - 4. 기타 기능 추가 하기
+      - 타임리프에서 로그인 정보 이용 하기
+      - 검색 기능 추가
 ## 기억해야할 어노테이션
 - Component
 	- RestController, Controller , Service , Repository
@@ -67,6 +69,7 @@ D delete Delete
 - Spring Data JPA
 - Spring Security
 - Spring Web
+- Thymeleaf
 
 ### QueryDSL
 > <!--dependency-->
@@ -81,4 +84,18 @@ D delete Delete
 			<artifactId>querydsl-apt</artifactId>
 			<version>5.0.0</version>
 			<classifier>jakarta</classifier>
+</dependency>
+
+> <!--dependency-->
+		<dependency>
+			<groupId>com.querydsl</groupId>
+			<artifactId>querydsl-jpa</artifactId>
+			<version>5.0.0</version>
+			<classifier>jakarta</classifier>
 		</dependency>
+		<dependency>
+			<groupId>com.querydsl</groupId>
+			<artifactId>querydsl-apt</artifactId>
+			<version>5.0.0</version>
+			<classifier>jakarta</classifier>
+</dependency>
