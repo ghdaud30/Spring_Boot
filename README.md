@@ -23,7 +23,7 @@
 - 로그인 세션 정보 체크 추가 & JPX 2023-11-08
    - JWT (JSON Web Token)
    - 인증에 필요한 정보를 암호화한 JSON Token
-- 웹 애플리케이션 통합 2023-11-13
+- 웹 애플리케이션 통합 2023-11-13 (BoardWeb)
    - 1. 비즈니스 레이어 개발
       - Entity 클래스 만들기
       - Repository Interface 작성하기
@@ -38,6 +38,9 @@
    - 4. 기타 기능 추가 하기
       - 타임리프에서 로그인 정보 이용 하기
       - 검색 기능 추가
+      
+- 구글 OAuth2 추가 2023-11-15 (SpringBootSecurity-2)
+
 ## 기억해야할 어노테이션
 - Component
 	- RestController, Controller , Service , Repository

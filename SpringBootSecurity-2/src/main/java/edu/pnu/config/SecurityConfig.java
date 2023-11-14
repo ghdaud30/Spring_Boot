@@ -32,6 +32,11 @@ public class SecurityConfig {
 				.deleteCookies("JSESSIONID")
 				.logoutSuccessUrl("/login"));
 
+		http.oauth2Login(oauth2->{
+			oauth2.loginPage("/login");
+			});
+
+		
 		
 		return http.build();
 	}
